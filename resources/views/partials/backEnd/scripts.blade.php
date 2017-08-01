@@ -22,8 +22,8 @@
 <script type="text/javascript">
 	$( document ).ready(function() {
 	    $("#toggleCss").click(function(){
-	    	$('#default-css').prop('disabled', (i, v) => !v);
-	    	$('#alternate-css').prop('disabled', (i, v) => !v);
+	    	$('.defaultCSS').prop('disabled', (i, v) => !v);
+	    	$('.alternateCSS').prop('disabled', (i, v) => !v);
 	    });
 	});
 </script>

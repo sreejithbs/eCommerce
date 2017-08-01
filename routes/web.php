@@ -24,4 +24,19 @@ Route::prefix('admin')->group(function () {
 	Route::post('/logout', 'Auth\AdminLoginController@adminLogout')->name('admin-logout');
 
 	Route::get('/', 'AdminController@index')->name('admin-dashboard');
+
+
+	// ****************** CATEGORY *************************
+	//Display Index Page
+	Route::get('/category', 'CategoryController@index')->name('category.index');
+	// Populate Data in Edit Modal Form
+	Route::get('category/{category_id}', 'CategoryController@show');
+	//create New Product
+	Route::post('category', 'CategoryController@store');
+	// update Existing Product
+	Route::put('category/{category_id}', 'CategoryController@update');
+	// delete product
+	Route::delete('category/{category_id}', 'CategoryController@destroy');
 });
+
+

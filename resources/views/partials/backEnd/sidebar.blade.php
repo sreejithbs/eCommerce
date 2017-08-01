@@ -8,7 +8,7 @@
         	<li class="text-muted menu-title">Navigation</li>
 
             <li class="has_sub">
-                <a href="javascript:void(0);" class="waves-effect"><i class="ti-home"></i> <span> Dashboard </span> </a>
+                <a href="{{ route ('admin-dashboard')}}" class="waves-effect"><i class="ti-home"></i> <span> Dashboard </span> </a>
              
             </li>
 
@@ -32,12 +32,9 @@
 
             <li class="text-muted menu-title">Categories</li>
             <li class="has_sub">
-                <a href="javascript:void(0);" class="waves-effect"><i class="ti-files"></i><span> Manage Category </span> <span class="menu-arrow"></span></a>
-                <ul class="list-unstyled">
-                	<li><a href="javascript:void(0);">Add New Category</a></li>
-                    <li><a href="javascript:void(0);">View Categories</a></li>
-                </ul>
+                <a href="{{ route('category.index')}}" class="waves-effect"><i class="ti-files"></i><span> Manage Category </span></a>
             </li>
+
 
             <li class="text-muted menu-title">Products</li>
             <li class="has_sub">

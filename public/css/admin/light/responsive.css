@@ -68,14 +68,11 @@ File: Responsive
     width: 100%;
   }
   .navbar-nav .open .dropdown-menu {
-    background-color: #36404a;
+    background-color: #ffffff;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     left: auto;
     position: absolute;
     right: 0;
-  }
-  .navbar-nav .open .dropdown-menu a {
-    color: #98a6ad !important;
   }
   .todo-send {
     margin-top: 10px;

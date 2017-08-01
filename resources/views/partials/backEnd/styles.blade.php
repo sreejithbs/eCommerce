@@ -1,14 +1,18 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
 <!-- Toggle CSS Files -->
-<link id="default-css" href="{{asset ('css/admin/core.css')}}" rel="stylesheet" type="text/css" />
-<link id="alternate-css" disabled href="{{asset ('css/admin/light_css/core.css')}}" rel="stylesheet" type="text/css" />
+<link class="defaultCSS" disabled href="{{asset ('css/admin/core.css')}}" rel="stylesheet" type="text/css" />
+<link class="defaultCSS" disabled href="{{asset ('css/admin/components.css')}}" rel="stylesheet" type="text/css" />
+<link class="defaultCSS" disabled href="{{asset ('css/admin/pages.css')}}" rel="stylesheet" type="text/css" />
+<link class="defaultCSS" disabled href="{{asset ('css/admin/responsive.css')}}" rel="stylesheet" type="text/css" />
+
+<link class="alternateCSS" href="{{asset ('css/admin/light/core.css')}}" rel="stylesheet" type="text/css" />
+<link class="alternateCSS" href="{{asset ('css/admin/light/components.css')}}" rel="stylesheet" type="text/css" />
+<link class="alternateCSS" href="{{asset ('css/admin/light/pages.css')}}" rel="stylesheet" type="text/css" />
+<link class="alternateCSS" href="{{asset ('css/admin/light/responsive.css')}}" rel="stylesheet" type="text/css" />
 <!-- end of Toggle CSS Files -->
 
-<link href="{{asset ('css/admin/components.css')}}" rel="stylesheet" type="text/css" />
 <link href="{{asset ('css/admin/icons.css')}}" rel="stylesheet" type="text/css" />
-<link href="{{asset ('css/admin/pages.css')}}" rel="stylesheet" type="text/css" />
-<link href="{{asset ('css/admin/responsive.css')}}" rel="stylesheet" type="text/css" />
 
 <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
