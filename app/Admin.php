@@ -2,17 +2,21 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Admin extends Model
+class Admin extends Authenticatable
 {
+    use Notifiable;
+    protected $guard = 'admin';
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'firstName', 'lastName', 'password', 'avatar', 'status', 'type',
+        'firstName', 'lastName', 'email', 'password', 'avatar', 'status', 'type',
     ];
 
     /**
@@ -23,4 +27,10 @@ class Admin extends Model
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    // Combine firstName and lastName to get full_name with the help of accessors
+    function getFullNameAttribute()
+    {
+      return $this->attributes['firstName']. ' ' .$this->attributes['lastName'];
+    }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -23,6 +23,6 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('pages.admins.home');
+        return view('pages.backEnd.home');
     }
 }

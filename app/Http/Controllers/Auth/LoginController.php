@@ -39,19 +39,4 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    /**
-     * Log the user out of the application.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function logout()
-    {
-        Auth::guard('web')->logout();
-        if (!Auth::guard('admin')->check()){
-            Session::flush();
-            Session::regenerate();
-        }
-        return redirect('/home');
-    }
 }

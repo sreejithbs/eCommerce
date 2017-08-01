@@ -10,7 +10,7 @@
 
 	<title>@yield('title')</title>
 
-	@include('partials.admins.styles')      
+	@include('partials.backEnd.styles')      
 
 </head>
 
@@ -19,8 +19,8 @@
 	<!-- Begin page -->
 	<div id="wrapper">
 
-		@include('partials.admins.header')
-		@include('partials.admins.sidebar')
+		@include('partials.backEnd.header')
+		@include('partials.backEnd.sidebar')
 
 		<!-- ============================================================== -->
 		<!-- Start right Content here -->
@@ -102,7 +102,7 @@
 				</div> <!-- container -->
 			</div> <!-- content -->
 
-			@include('partials.admins.footer')
+			@include('partials.backEnd.footer')
 
 		</div>
 
@@ -113,7 +113,7 @@
 	</div>
 	<!-- END wrapper -->
 
-	@include('partials.admins.scripts')
+	@include('partials.backEnd.scripts')
 	
 </body>
 </html>

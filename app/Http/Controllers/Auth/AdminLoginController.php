@@ -55,13 +55,10 @@ class AdminLoginController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function adminLogout()
+    public function adminLogout(Request $request)
     {
         Auth::guard('admin')->logout();
-        if (!Auth::guard('web')->check()){
-            Session::flush();
-            Session::regenerate();
-        }
+        $request->session()->invalidate();
         return redirect('/admin');
     }
 }
