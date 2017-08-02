@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.backEnd.itemList');
 });
 
 Auth::routes();
@@ -23,20 +23,32 @@ Route::prefix('admin')->group(function () {
 	Route::post('/login', 'Auth\AdminLoginController@saveLogin')->name('admin-login');
 	Route::post('/logout', 'Auth\AdminLoginController@adminLogout')->name('admin-logout');
 
-	Route::get('/', 'AdminController@index')->name('admin-dashboard');
+	Route::get('/', 'AdminHomeController@index')->name('admin-dashboard');
 
+
+	// ****************** ADMINS *************************
+	Route::get('/admins', 'AdminController@index');
+	Route::get('admins/{admin_id}', 'AdminController@show');
+	Route::post('admins', 'AdminController@store');
+	Route::put('admins/{admin_id}', 'AdminController@update');
+	Route::delete('admins/{admin_id}', 'AdminController@destroy');
 
 	// ****************** CATEGORY *************************
-	//Display Index Page
 	Route::get('/category', 'CategoryController@index')->name('category.index');
-	// Populate Data in Edit Modal Form
 	Route::get('category/{category_id}', 'CategoryController@show');
-	//create New Product
 	Route::post('category', 'CategoryController@store');
-	// update Existing Product
 	Route::put('category/{category_id}', 'CategoryController@update');
-	// delete product
 	Route::delete('category/{category_id}', 'CategoryController@destroy');
+
+
+	// ****************** ITEMS *************************
+	Route::get('items', 'ItemController@index')->name('item.index');
+	Route::get('itemAdd', 'ItemController@create')->name('item.add');
+	Route::post('itemAdd', 'ItemController@store')->name('item.store');
+	Route::get('itemEdit/{item_id}', 'ItemController@edit')->name('item.edit');
+	Route::post('itemEdit/{item_id}', 'ItemController@update')->name('item.update');
+	Route::delete('itemDestroy/{item_id}', 'ItemController@destroy')->name('item.destroy');
+
 });
 
 

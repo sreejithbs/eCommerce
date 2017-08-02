@@ -28,8 +28,12 @@
                       <td>{{$category->name}}</td>
                       <td>{{$category->description}}</td>
                       <td>
-                          <button class="btn btn-warning btn-detail open_modal" value="{{$category->id}}">Edit</button>
-                          <button class="btn btn-danger btn-delete delete-category" value="{{$category->id}}">Delete</button>
+                          <button class="btn btn-warning btn-detail open_modal" value="{{$category->id}}">
+                            <i class="md md-edit"></i>
+                          </button>
+                          <button class="btn btn-danger btn-delete delete-category" value="{{$category->id}}">
+                            <i class="md md-delete"></i>
+                          </button>
                       </td>
                   </tr>
                 @endforeach

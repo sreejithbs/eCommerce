@@ -32,16 +32,16 @@
 
             <li class="text-muted menu-title">Categories</li>
             <li class="has_sub">
-                <a href="{{ route('category.index')}}" class="waves-effect"><i class="ti-files"></i><span> Manage Category </span></a>
+                <a href="{{ route('category.index')}}" class="waves-effect"><i class="ti-files"></i><span> Manage Categories </span></a>
             </li>
 
 
-            <li class="text-muted menu-title">Products</li>
+            <li class="text-muted menu-title">Items</li>
             <li class="has_sub">
-                <a href="javascript:void(0);" class="waves-effect"><i class="ti-files"></i><span> Manage Products </span> <span class="menu-arrow"></span></a>
+                <a href="javascript:void(0);" class="waves-effect"><i class="ti-files"></i><span> Manage Items </span> <span class="menu-arrow"></span></a>
                 <ul class="list-unstyled">
-                    <li><a href="javascript:void(0);">Add New Product</a></li>
-                    <li><a href="javascript:void(0);">View Products</a></li>
+                    <li><a href="{{ route('item.add')}}">Add New Item</a></li>
+                    <li><a href="{{ route('item.index')}}">View Items</a></li>
                 </ul>
             </li>
 
