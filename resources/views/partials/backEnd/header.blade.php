@@ -4,7 +4,7 @@
     <!-- LOGO -->
     <div class="topbar-left">
         <div class="text-center">
-            <a href="#" class="logo"><i class="icon-magnet icon-c-logo"></i><span>Admin Panel</span></a>
+            <a href="#" class="logo"><i class="ti-world icon-c-logo"></i><span>Admin Panel</span></a>
             <!-- Image Logo here -->
             <!--<a href="index.html" class="logo">-->
                 <!--<i class="icon-c-logo"> <img src="assets/images/logo_sm.png" height="42"/> </i>-->

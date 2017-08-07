@@ -45,7 +45,7 @@
                 </ul>
             </li>
 
-            <li class="text-muted menu-title">Coupons</li>
+            <li class="text-muted menu-title">Coupons (construction)</li>
             <li class="has_sub">
                 <a href="javascript:void(0);" class="waves-effect"><i class="ti-files"></i><span> Manage Coupons </span> <span class="menu-arrow"></span></a>
                 <ul class="list-unstyled">

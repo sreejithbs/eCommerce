@@ -37,14 +37,10 @@
 					<!-- Page-Title -->
 					<div class="row">
 						<div class="col-sm-12">
-							<div class="btn-group pull-right m-t-15">
-								<button type="button" id="toggleCss" class="btn btn-default waves-effect waves-light">Change Theme <span class="m-l-5"><i class="fa fa-cog"></i></span></button>
-							</div>
-
 							<h4 class="page-title">@yield('heading')</h4>
 							<!-- <p class="text-muted page-title-alt">Welcome to Admin Panel !</p> -->
 						</div>
-					</div><br>
+					</div><hr/>
 
 					@if($message = \Session::get('success'))
 		                <div class="alert alert-success">
